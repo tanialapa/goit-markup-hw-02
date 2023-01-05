@@ -61,9 +61,6 @@ ol {
 	margin-bottom: 0;
 	padding-left: 0;
 }
-img {
-	display: block;
-}
 
 .container {
 	width: 1158px;
@@ -96,7 +93,7 @@ img {
 .main-nav {
 	display: flex;
 	align-items: center;
-  border-bottom: 1px solid #E7E9FC;
+
 }
 
 .auth-nav {
@@ -148,9 +145,7 @@ img {
 .hero {
 	background-color: var(--primary-text-color);
 	text-align: center;
-	padding-top: 188px;
-	padding-bottom: 120px;
-	margin-bottom: 120px;
+	padding: 188px;
 }
 .hero-title {
 	font-size: 56px;
@@ -174,17 +169,26 @@ img {
   margin-bottom: 120px;
 }
 
+.item-card {
+  margin-left: 24px; 
+}
 .people {
 	width: 264px;
 	background-color: var(--one-bg-color);
+  margin-left: 24px;
 }
 .team-list {
   justify-content: space-between;
+  margin-left: 24px;
+}
+.team-list:last-child {
+  margin-left: 0;
 }
 
 .section {
 	margin-top: 0;
-	margin-bottom: 120px;
+	padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .section-title {
@@ -199,10 +203,13 @@ img {
 
 .img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-
-	margin-bottom: 32px;
+}
+.img-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
 }
 
 /*button*/
@@ -228,12 +235,11 @@ img {
 	border-radius: 4px;
 	font-weight: 600;
 	cursor: pointer;
-	min-width: 170px;
-	height: 51px;
+	width: 105px;
+	height: 24px;
 	text-align: center;
 	outline: none;
 	border: none;
-	margin-bottom: 188px;
 	margin-top: 48px;
 }
 
@@ -255,10 +261,7 @@ img {
 
 .portfolio-bottom {
 	margin-bottom: 72px;
-}
-.button-list {
-  padding-left: 427px;
-  padding-top: 96px;
+  justify-content: center;
 }
 
 .card-set {
@@ -277,10 +280,19 @@ img {
   margin-bottom: 48px;
 }
 
+.card-set > .item:last-child {
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
 .card-content {
   padding-left: 16px;
   padding-top: 32px;
   padding-bottom: 16px;
+}
+
+.card-heading {
+  font-weight: 500;
 }
 
 .card-text {
@@ -294,8 +306,11 @@ img {
 
   padding-top: 100px;
   padding-bottom: 100px;
-  padding-left: 156px;
 }
 .footer-color {
 	color: var(--title-bg-color);
+}
+
+.footer-text {
+  width: 264px;
 }
