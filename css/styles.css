@@ -145,7 +145,8 @@ ol {
 .hero {
 	background-color: var(--primary-text-color);
 	text-align: center;
-	padding: 188px;
+	padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
 	font-size: 56px;
