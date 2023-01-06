@@ -166,8 +166,8 @@ ol {
 	margin-bottom: 72px;
 }
 .section-team {
-	background-color: var(--title-bg-color);
-  margin-bottom: 120px;
+ background-color: var(--title-bg-color);
+ padding-bottom:120px;
 }
 
 .item-card {
@@ -191,6 +191,10 @@ ol {
 	padding-top: 120px;
   padding-bottom: 120px;
 }
+
+.advantages {
+  padding-top: 0;
+ }
 
 .section-title {
 	margin-bottom: 0;
@@ -266,13 +270,15 @@ ol {
 }
 
 .card-set {
-  margin: 0;
+  margin: 0 0 72px 0;
   padding: 0;
   list-style: none;
 
 	display: flex;
 	flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
+
 }
 .card-set > .item {
   border: 1px solid #E7E9FC;
@@ -283,7 +289,6 @@ ol {
 
 .card-set > .item:last-child {
   margin-left: 0px;
-  margin-bottom: 0px;
 }
 
 .card-content {
@@ -294,6 +299,7 @@ ol {
 
 .card-heading {
   font-weight: 500;
+  font-size: 20px;
 }
 
 .card-text {
@@ -314,4 +320,5 @@ ol {
 
 .footer-text {
   width: 264px;
+  margin-top: 16px;
 }
