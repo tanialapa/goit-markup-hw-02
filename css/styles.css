@@ -168,6 +168,7 @@ ol {
 .section-team {
  background-color: var(--title-bg-color);
  padding-bottom:120px;
+ padding-top: 120px; 
 }
 
 .item-card {
@@ -268,23 +269,25 @@ ol {
 	margin-bottom: 72px;
   justify-content: center;
 }
+.projects {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 .card-set {
-  margin: 0 0 72px 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 
 	display: flex;
 	flex-wrap: wrap;
-  justify-content: space-between;
   align-items: flex-start;
+  column-gap: 24px;
+  row-gap: 48px;
 
 }
 .card-set > .item {
-  border: 1px solid #E7E9FC;
   flex-basis: calc(100%/3 - 26px);
-  margin-left: 24px;
-  margin-bottom: 48px;
 }
 
 .card-set > .item:last-child {
@@ -295,6 +298,8 @@ ol {
   padding-left: 16px;
   padding-top: 32px;
   padding-bottom: 16px;
+  border: 1px solid #E7E9FC;
+  border-top:none;
 }
 
 .card-heading {
